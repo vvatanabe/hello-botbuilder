@@ -14,10 +14,6 @@ bot.use((session, next) => {
 
 const dialog = new builder.CommandDialog();
 
-dialog.onDefault(() => {
-  // dafault
-})
-
 dialog.matches('register profile', [
   (session) => {
     session.beginDialog('/profile/name');
@@ -32,6 +28,10 @@ dialog.matches('register profile', [
     session.reset('/')
   }
 ])
+
+dialog.onDefault(() => {
+  // dafault
+})
 
 bot.add('/profile/name', [
   (session) => {
