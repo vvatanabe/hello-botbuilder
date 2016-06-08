@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "botbuilder": "^0.6.0"
+    "botbuilder": "^1.0.1"
   }
 }
